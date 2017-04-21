@@ -6,8 +6,8 @@ RUN apt-get update \
     && wget https://github.com/ginuerzh/gost/releases/download/v2.4-dev/gost_2.4-dev20170303_linux_amd64.tar.gz \
     && tar -xzf gost_2.4-dev20170303_linux_amd64.tar.gz \
     && mv gost_2.4-dev20170303_linux_amd64/gost /root/ \
-    && apt-get -y remove wget \
-    && apt-get -y autoremove \
+    && apt-get remove wget -y \
+    && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf gost_2.4-dev20170303_linux_amd64.tar.gz  /var/lib/apt/lists/*
 
