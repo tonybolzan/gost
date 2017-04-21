@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:oldstable-slim
 MAINTAINER mixool0204@gmail.com
 
 RUN apt-get update \
