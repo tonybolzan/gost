@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER mixool0204@gmail.com
 
-RUN curl -o /root/gost https://raw.githubusercontent.com/mixool/Gost/master/gost
+RUN curl -o /root/gost https://raw.githubusercontent.com/mixool/Gost/master/gost \
     && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
