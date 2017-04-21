@@ -1,8 +1,0 @@
-FROM alpine:latest
-MAINTAINER mixool0204@gmail.com
-
-ADD gost /usr/bin/
-
-RUN chmod +x /usr/bin/gost
-
-ENTRYPOINT ["/usr/bin/gost"]
