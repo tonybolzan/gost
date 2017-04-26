@@ -22,6 +22,6 @@ Deploy in app.arukas.io:
 3.Monitor different ports 
   8080-TCP,8088-UDP,8338-tcp
             CMD    -L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@8338
-More details：https://mixool.blogspot.ca/2017/04/dockergost.html
-
+ 
+For more details：https://mixool.blogspot.ca/2017/04/dockergost.html
 For more command line options, refer to:https://github.com/ginuerzh/gost
