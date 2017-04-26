@@ -16,13 +16,13 @@ docker run -d -p 8080:8080 --net=host mixool/gost -L=:8080 -F=ss://chacha20:pass
 then try with cURL:
 curl -x 127.0.0.1:8080 https://myip.today
 
-Create http_proxy on loalhost of Mac OS X, tunneling to remote shadowsocks server and make it always restart unless stopped manually£º
+Create http_proxy on loalhost of Mac OS X, tunneling to remote shadowsocks server and make it always restart unless stopped manuallyÂ£Âº
 docker run --restart=unless-stopped -d -p 8080:8080 mixool/gost -L=:8080 -F=ss://chacha20:<password>@<ss_host>:<ss_port>
 
-Deploy in app.arukas.io£º
-1.8080-TCP  CMD£º    -L=:8080                                 useage:chrome+SwitchyOmega HTTPS Endpoint:443
-2.8088-UDP  CMD£º    -L=http2+kcp://:8088                     useage:gost -L=:8080 -F=http2+kcp://<ip>:<port>
+Deploy in app.arukas.ioÂ£Âº
+1.8080-TCP  CMDÂ£Âº    -L=:8080                                 useage:chrome+SwitchyOmega HTTPS Endpoint:443
+2.8088-UDP  CMDÂ£Âº    -L=http2+kcp://:8088                     useage:gost -L=:8080 -F=http2+kcp://<ip>:<port>
 3.Monitor different ports 8080-TCP,8088-UDP,8338-tcp
-            CMD£º    -L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@8338
+            CMDÂ£Âº    -L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@8338
 
-For more command line options, refer to the£ºhttps://github.com/ginuerzh/gost
+For more command line options, refer to theÂ£Âºhttps://github.com/ginuerzh/gost
