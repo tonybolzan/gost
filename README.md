@@ -2,8 +2,7 @@ This Dockerfile builds an image of gost-2.4-dev20170303. Based on debian:oldstab
 ***
 #### Quick Start
 This image uses ENTRYPOINT to run the containers as an executable.  
-`docker run -d -p 8080:8080 mixool/gost -L=ss://chacha20:password@:8080`  
-You can configure the service to run on a port of your choice. Just make sure the port number given to docker is the same as the one given to gost.
+`docker run -d -p 8080:8080 mixool/gost -L=:8080`
 ***
 #### Create shadowsocks server and client:
 * shadowsocks server  
@@ -13,13 +12,14 @@ You can configure the service to run on a port of your choice. Just make sure th
 then try with cURL:  
 `curl -x 127.0.0.1:8080 https://myip.today`
 ***
-#### Deploy in app.arukas.io:
-* 8080-TCP/CMD `-L=:8080` 
+#### Deploy in [app.arukas.io](https://app.arukas.io/):
+* 8080-TCP|CMD `-L=:8080` 
     * client: chrome+switchyomega HTTPS Endpoint:443
     * gost client: `-L=:8080 -F=socks5://s_ip:s_port`
-* 8088-UDP/CMD `-L=http2+kcp://:8088`
+* 8088-UDP|CMD `-L=http2+kcp://:8088`
     * gost client: -L=:8080 -F=http2+kcp://s_ip:s_port
-* 8080-TCP,8088-UDP,8338-tcp/CMD `-L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@:8338`
+* 8080-TCP,8088-UDP,8338-tcp|CMD `-L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@:8338`
+    * client: shadowsocks client
     * gost client: `-L=:8080 -F=?`
 ***
 #### More
