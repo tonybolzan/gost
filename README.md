@@ -13,7 +13,7 @@ please note this will share the networking interface with the hostand `-L=:8080`
 ````
 docker run -d -p 8080:8080 --net=host mixool/gost -L=:8080 -F=ss://chacha20:password@s_ip:8080
 ````
-then try with cURL:
+then try with cURL:  
 `curl -x 127.0.0.1:8080 https://myip.today
 ***
 #### Deploy in app.arukas.io:
@@ -25,5 +25,5 @@ useage:gost -L=:8080 -F=http2+kcp://s_ip:s_port
   8080-TCP,8088-UDP,8338-tcp  
             CMD    `-L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@8338`
 #### More           
-For more details：[Mybolg](https://mixool.blogspot.ca/2017/04/dockergost.html)
+For more details：[Mybolg](https://mixool.blogspot.ca/2017/04/dockergost.html)  
 For more command line options, refer to:[github/gost](https://github.com/ginuerzh/gost)
