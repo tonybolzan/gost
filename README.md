@@ -16,12 +16,12 @@ then try with cURL:
 ***  
 #### Deploy in app.arukas.io:  
 * 8080-TCP/CMD `-L=:8080`  
- * client: chrome+switchyomega HTTPS Endpoint:443  
- * gost client: gost -L=:8080 -F=socks5://s_ip:s_port  
+ *    client: chrome+switchyomega HTTPS Endpoint:443  
+ *    gost client: gost -L=:8080 -F=socks5://s_ip:s_port  
 * 8088-UDP/CMD `-L=http2+kcp://:8088`  
- * gost client: gost -L=:8080 -F=http2+kcp://s_ip:s_port  
+ *    gost client: gost -L=:8080 -F=http2+kcp://s_ip:s_port  
 * 8080-TCP,8088-UDP,8338-tcp/CMD `-L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@:8338`  
- * gost client: gost -L=:8080 -F=?
+ *    gost client: gost -L=:8080 -F=?
 ***  
 #### More           
 For more details: [&copy;Mybolg](https://mixool.blogspot.ca/2017/04/dockergost.html)  
