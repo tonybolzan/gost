@@ -15,13 +15,13 @@ then try with cURL:
     * please note this will share the networking interface with the hostand `-L=:8080` will listen on ALL interfaces on this host,use `-L=127.0.0.1:8080` if you want to listen on localhost only  
 ***  
 #### Deploy in app.arukas.io:  
-* 8080-TCP/CMD `-L=:8080`  
-    *　client: chrome+switchyomega HTTPS Endpoint:443  
-    *　gost client: `-L=:8080 -F=socks5://s_ip:s_port`  
-* 8088-UDP/CMD `-L=http2+kcp://:8088`  
-    *　gost client: -L=:8080 -F=http2+kcp://s_ip:s_port  
+* 8080-TCP/CMD `-L=:8080`  
+    *　client: chrome+switchyomega HTTPS Endpoint:443  
+    *　gost client: `-L=:8080 -F=socks5://s_ip:s_port`  
+* 8088-UDP/CMD `-L=http2+kcp://:8088`  
+    *　gost client: -L=:8080 -F=http2+kcp://s_ip:s_port  
 * 8080-TCP,8088-UDP,8338-tcp/CMD `-L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@:8338`  
-    * gost client: `-L=:8080 -F=?`  　
+    * gost client: `-L=:8080 -F=?`  
 ***  　
 #### More          　 
 For more details: [&copy;Mybolg](https://mixool.blogspot.ca/2017/04/dockergost.html)  
