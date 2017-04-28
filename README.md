@@ -9,7 +9,7 @@ You can configure the service to run on a port of your choice. Just make sure th
 * shadowsocks server  
 `docker run -d -p 8080:8080 mixool/gost -L=ss://chacha20:password@:8080`
 * shadowsocks client  
-`docker run -d -p 8080:8080 --net=host mixool/gost -L=:8080 -F=ss://chacha20:password@s_ip:8080`
+`docker run -d -p 8080:8080 --net=host mixool/gost -L=:8080 -F=ss://chacha20:password@s_ip:8080`  
 then try with cURL:  
 `curl -x 127.0.0.1:8080 https://myip.today`
     * please note this will share the networking interface with the hostand `-L=:8080` will listen on ALL interfaces on this host,use `-L=127.0.0.1:8080` if you want to listen on localhost only
