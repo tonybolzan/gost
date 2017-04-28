@@ -1,4 +1,4 @@
-Dockerfile builds an 23MB image of gost-2.4-dev20170303 based on [debian:oldstable-slim](https://hub.docker.com/_/debian/)
+This dockerfile builds an image of [gost-2.4-dev20170303](https://github.com/ginuerzh/gost/releases) based on [debian:oldstable-slim](https://hub.docker.com/_/debian/)
 ***
 #### Quick Start
 This image uses ENTRYPOINT to run the containers as an executable.  
