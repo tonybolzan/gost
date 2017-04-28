@@ -16,9 +16,9 @@ then try with cURL:
 ***  
 #### Deploy in app.arukas.io:  
 * 8080-TCP/CMD `-L=:8080`  
-useage:chrome+SwitchyOmega HTTPS Endpoint:443  
-* 8088-UDP/CMD `-L=http2+kcp://:8088  
-useage:gost -L=:8080 -F=http2+kcp://s_ip:s_port  
+useage: chrome+switchyomega HTTPS Endpoint:443  
+* 8088-UDP/CMD `-L=http2+kcp://:8088`  
+useage: gost -L=:8080 -F=http2+kcp://s_ip:s_port  
 * Monitor different ports  
 8080-TCP,8088-UDP,8338-tcp/CMD `-L=:8080 -L=http2+kcp://:8088 -L=ss://chacha20:password@8338`  
 ***  
