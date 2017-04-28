@@ -16,7 +16,7 @@ then try with cURL:
 ***  
 #### Deploy in app.arukas.io:  
 * 8080-TCP/CMD `-L=:8080`  
- *    client: chrome+switchyomega HTTPS Endpoint:443  
+ -    client: chrome+switchyomega HTTPS Endpoint:443  
  *    gost client: gost -L=:8080 -F=socks5://s_ip:s_port  
 * 8088-UDP/CMD `-L=http2+kcp://:8088`  
  *    gost client: gost -L=:8080 -F=http2+kcp://s_ip:s_port  
