@@ -1,9 +1,9 @@
 This Dockerfile builds an image of gost-2.4-dev20170303. Based on debian:oldstable-slim with the image size of 23MB.
-#### Quick Start
+### Quick Start
 This image uses ENTRYPOINT to run the containers as an executable.
 docker run -d -p 8080:8080 mixool/gost -L=ss://chacha20:password@:8080
 You can configure the service to run on a port of your choice. Just make sure the port number given to docker is the same as the one given to gost.
-#### Create shadowsocks server and client:
+### Create shadowsocks server and client:
 * shadowsocks server
 `docker run -d -p 8080:8080 mixool/gost -L=ss://chacha20:password@:8080`
 * shadowsocks client
