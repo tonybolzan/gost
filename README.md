@@ -24,5 +24,5 @@ then try with cURL:
 ***
 #### More
 Download: [gost client](https://github.com/ginuerzh/gost/releases)  
-For more details: [&copy;Mybolg](https://mixool.blogspot.ca/2017/04/dockergost.html)  
-For more command line options, refer to: [github/gost](https://github.com/ginuerzh/gost)  
+For more details: [&copy;bolg](https://mixool.blogspot.ca/2017/04/dockergost.html)  
+For more command line options, refer to: [github](https://github.com/ginuerzh/gost)  
